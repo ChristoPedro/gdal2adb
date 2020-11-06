@@ -23,7 +23,7 @@ Vamos aproveitar e já dar as permissões de execução aos arquivos da pasta bi
 
     $ chamod -R +x gdal/bin
 
-### Instalando o Oracle Client e o SQLPlus (Linux CentOS)
+### Download Oracle Client e o SQLPlus (Linux CentOS)
 
 Faça o Download do Oracle CLient
 
@@ -33,12 +33,14 @@ Faça do Download do SQLPlus
 
     $ wget https://download.oracle.com/otn_software/linux/instantclient/19600/oracle-instantclient19.6-sqlplus-19.6.0.0.0-1.x86_64.rpm
 
-### Instalando o Oracle Client e o SQLPlus (Debian)
+### Instalando o Oracle Client e o SQLPlus (CentOS)
 
 Para linux na distribuição CentOS precisamos executar os seguintes comandos:
 
     $ sudo rpm -i oracle-instantclient19.6-basic-19.6.0.0.0-1.x86_64.rpm
     $ sudo rpm -i oracle-instantclient19.6-sqlplus-19.6.0.0.0-1.x86_64.rpm
+
+### Instalando o Oracle Client e o SQLPlus (Debian)
 
 Para linux na distribuição Debian devemos primero baixar o pacote alien:
 
