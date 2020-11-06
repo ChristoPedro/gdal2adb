@@ -57,11 +57,8 @@ E agora podemos instalar os pacotes
     $ sudo dpkg -i oracle-instantclient19.6-basic-19.6.0.0.0-1.x86_64.deb
     $ sudo dpkg -i oracle-instantclient19.6-sqlplus-19.6.0.0.0-1.x86_64.deb
 
+Para o Debian, também preciamos baixar e instalar o libssl1
 
+    $ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
+    $ sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5_amd64.deb
 
-
-
-### Configurando a Wallet do Autonomous Database
-
- * Faça o download da Wallet
- * Desconpact a Wallet para 
