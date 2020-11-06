@@ -127,6 +127,7 @@ Para não ser necessário executar o arquivo toda vez que se logar na máquina v
    $ sudo vi /etc/profile
 
 Vamos adicionar ao final do arquivo
+    
     export GDAL_HOME=[path_gdal]
     . /[path_gdal]/setup_gdal.conf
 
