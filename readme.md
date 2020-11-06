@@ -66,7 +66,11 @@ Para o Debian, também preciamos baixar e instalar o libssl1
 
 ### Configurando a Wallet de Conexão do Autonomous Database
 
+Transfira a wallet para a máquina.
+
 Descompact a wallet para o diretório que vamos associar ao TNS_ADMIN.
+
+    $ unzip [wallet_name].zip -d [path_da_wallet]
 
 Pegue o path completo da pasta onde a wallet foi descompactada
 
@@ -100,3 +104,8 @@ Vamos executar o sqlplus para verificar a conexão com o banco
 
 Se a conexão foi um sucesso podemos prosseguir para a configuração do gdal
 
+### Configurando o Gdal
+
+Faça o Download do arquivo de configuração
+
+    $ wget 
