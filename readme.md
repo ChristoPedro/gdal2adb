@@ -106,6 +106,28 @@ Se a conexão foi um sucesso podemos prosseguir para a configuração do gdal
 
 ### Configurando o Gdal
 
+Primero vamos criar a variave GDAL_HOME
+
+    $ export export GDAL_HOME=[path_gdal]
+
 Faça o Download do arquivo de configuração
 
-    $ wget 
+    $ wget https://raw.githubusercontent.com/ChristoPedro/gdal2adb/master/setup_gdal.conf
+
+Copie o arquivo para a pasta do gdal
+
+    $ cp setup_gdal.conf [path_do_gdal]/gdal
+
+Va para a pasta do gdal e execute o arquivo
+
+    $ . setup_gdal.conf
+
+Para não ser necessário executar o arquivo toda vez que se logar na máquina vamos editar novamente o arquivo /etc/profile
+
+   $ sudo vi /etc/profile
+
+Vamos adicionar ao final do arquivo
+    export GDAL_HOME=[path_gdal]
+    . /[path_gdal]/setup_gdal.conf
+
+### Testando o upload de dados para o Autonomous Database
