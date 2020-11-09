@@ -141,8 +141,26 @@ E devemos ter uma resposta parecida com essa:
                [-gcp pixel line easting northing [elevation]]* [-order n | -tps]
                [-nomd] [-mo "META-TAG=VALUE"]* [-noNativeData]
 
-Note: ogr2ogr --long-usage for full help.
+    Note: ogr2ogr --long-usage for full help.
 
-FAILURE: no target datasource provided
+    FAILURE: no target datasource provided
 
-### Testando o upload de dados para o Autonomous Database
+## Testando o upload de dados para o Autonomous Database
+
+Na pasta onde temos os arquivos .shx, .shp e .dbf, vamos executar o seguinte comando substituindo os campos entre []:
+
+    ogr2ogr --config OCI_FID objectid \
+    -lco GEOMETRY_NAME=geom \
+    -lco spatial_index="false" \
+    -lco SRID=4326 \
+    -lco DIMINFO_X="-180,180,.005"  -lco DIMINFO_Y="-90,90,.005" \
+    -nln [Nome da tabela] -f OCI OCI:[usuario]/[senha]@[string de conexão]:  [nome do arquivo].shp
+
+Esse código cria uma nova tabela no banco de dados com as informações dos arquivos em questão.
+
+Se quisermos apenas fazer um update de dados em uma tabela já existente, usitlizamos o seguinte código:
+
+OBS: temos que tomar cuidado pois o nome da tabela nesse caso é Case Sensitive.
+
+    ogr2ogr -append --config OCI_FID objectid \
+    -nln [Nome da tabela] -f OCI OCI:[usuario]/[senha]@[string de conexão]:[Nome da tabela]  [nome do arquivo].shp
