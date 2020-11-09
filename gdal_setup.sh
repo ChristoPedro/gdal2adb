@@ -1,4 +1,4 @@
-wget https://bit.ly/3jZMGbW
+wget https://github.com/ChristoPedro/gdal2adb/raw/master/gdal_oracle18.zip
 
 unzip gdal_oracle18.zip
 
