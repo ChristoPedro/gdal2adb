@@ -2,6 +2,8 @@
 
 Guide para realizar carga de arquivos georeferenciados para o Banco Autonomous através do GDAL, em sistemas operacionais linux baseados em CentOS ou Debian.
 
+Depois da configuração, tem um exemplo [aqui](https://github.com/ChristoPedro/gdal2adb/blob/master/pythonexample.py) de como utilizar em um código python.
+
 ## Passos:
 
 - Download do Oracle Client e SQL*PLus
