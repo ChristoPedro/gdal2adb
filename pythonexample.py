@@ -9,7 +9,7 @@ def load_data():
     filepath = '/home/ubuntu/geofile'
     filename = '10-11.shp'
 
-    code = 'ogr2ogr -append --config OCI_FID objectid -nln Nuevo2 -f OCI OCI:'+ dbuser +'/'+ dbpassword + ':NUEVO2  ' + filepath + '/' + filename 
+    code = 'ogr2ogr -append --config OCI_FID objectid -nln Nuevo2 -f OCI OCI:'+ dbuser +'/'+ dbpassword + '@' + conection_string + ':NUEVO2  ' + filepath + '/' + filename 
 
     os.system(code)
 
