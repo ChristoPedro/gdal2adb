@@ -6,6 +6,9 @@ tar -xvf gdal_oracle18.tar
 
 chmod -R +x gdal/bin
 
+rm gdal_oracle18.zip
+rm gdal_oracle18.tar
+
 export GDAL_HOME=${PWD}/gdal
 export ORACLE_HOME=/usr/lib/oracle/19.6/client64
 export LD_LIBRARY_PATH=$ORACLE_HOME/lib
