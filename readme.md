@@ -108,7 +108,7 @@ Se a conexão foi um sucesso podemos prosseguir para a configuração do gdal
 
 Primero vamos criar a variave GDAL_HOME
 
-    $ export export GDAL_HOME=[path_gdal]
+    $ export GDAL_HOME=[path_gdal]
 
 Faça o Download do arquivo de configuração
 
