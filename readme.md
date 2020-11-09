@@ -1,4 +1,4 @@
-# Guide GDAL + ADW
+# Guide GDAL + ADB
 
 Guide para realizar carga de arquivos georeferenciados para o Banco Autonomous através do GDAL, em sistemas operacionais linux baseados em CentOS ou Debian.
 
