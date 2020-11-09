@@ -1,6 +1,6 @@
 wget https://bit.ly/3jZMGbW
 
-unzip gdal_oracle18.zip -d [destination folder]
+unzip gdal_oracle18.zip
 
 tar -xvf gdal_oracle18.tar
 
