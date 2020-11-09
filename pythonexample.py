@@ -2,9 +2,9 @@ import os
 
 def load_data():
 
-    dbuser = 'admin'
-    dbpassword = 'Oracle123456'
-    conection_string = 'adwtest_high'
+    dbuser = 'user'
+    dbpassword = 'password'
+    conection_string = 'db_high'
 
     filepath = '/home/ubuntu/geofile'
     filename = '10-11.shp'
