@@ -14,7 +14,7 @@ Depois da configuração, tem um exemplo [aqui](https://github.com/ChristoPedro/
 - Download e configuração do GDAL
 - Teste do GDAL
 
-## Download Oracle Client e SQL*Plus (Linux e CentOS)
+## Download Oracle Client e SQL*Plus (Debian e CentOS)
 
 Faça o Download do Oracle CLient
 
@@ -77,7 +77,7 @@ Edite o arquivo sqlnet.ora
 
 Vamos trocar a parte do "?/network/admin", pelo path atual da wallet
 
-### Cnfigurando o TNS_ADMIN
+### Configurando o TNS_ADMIN
 
 Agora vamos executar
 
